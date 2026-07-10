@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>منصة سهم للنشر | تسويق رقمي وهوية بصرية</title>
+  <meta name="description" content="منصة سهم للنشر تقدم حلول التسويق الرقمي والهوية البصرية وتصميم المواقع وخرائط Google وإدارة المحتوى بأسعار مناسبة للمشاريع والمتاجر.">
+  <meta name="keywords" content="تسويق رقمي, تصميم هوية, تصميم مواقع, خرائط Google, إدارة محتوى, منصة سهم للنشر">
+  <meta name="theme-color" content="#c99a3e">
+  <meta property="og:title" content="منصة سهم للنشر">
+  <meta property="og:description" content="نحوّل فكرتك إلى علامة تجارية مؤثرة.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/social-preview.webp">
+  <link rel="icon" href="assets/favicon.svg">
+  <style>
+    :root{
+      --gold:#c99a3e;--gold2:#e0b65d;--ink:#121820;--muted:#667079;
+      --line:#e8e8e8;--soft:#f8f8f6;--card:#fff;--radius:26px;
+      --shadow:0 18px 48px rgba(18,24,32,.08);--shadow2:0 28px 70px rgba(18,24,32,.14)
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#fff;color:var(--ink);line-height:1.8;overflow-x:hidden}
+    img{max-width:100%;display:block}a{text-decoration:none;color:inherit}.container{width:min(1220px,92%);margin:auto}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 21px;border-radius:15px;border:1px solid transparent;font-weight:800;transition:.25s;cursor:pointer}
+    .btn:hover{transform:translateY(-3px)}.btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#fff;box-shadow:0 12px 30px rgba(201,154,62,.28)}
+    .btn.light{background:#fff;border-color:#ddd;color:var(--ink)}.btn.dark{background:#151a20;color:#fff}.badge{display:inline-flex;padding:7px 14px;border-radius:999px;background:#fff8e9;color:#9b6c16;font-size:13px;font-weight:800}
+    .nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid #eee}
+    .nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:24px}
+    .brand-mark{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--gold),var(--gold2));display:grid;place-items:center;color:#fff;font-size:24px}.brand small{display:block;font-size:11px;color:#777;margin-top:-7px}
+    .nav-links{display:flex;align-items:center;gap:25px;font-weight:700;font-size:14px}.nav-links a:hover{color:var(--gold)}
+    .hero{background:linear-gradient(180deg,#fff,#fafafa);padding:64px 0 34px}.hero-grid{display:grid;grid-template-columns:.95fr 1.15fr;gap:44px;align-items:center}
+    .hero h1{font-size:clamp(40px,5.8vw,72px);line-height:1.15;margin:15px 0}.hero h1 span{color:var(--gold)}
+    .hero p{font-size:18px;color:var(--muted);margin:0 0 25px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-features{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}.hero-features div{background:#fff;border:1px solid #eee;border-radius:18px;padding:14px;text-align:center;box-shadow:0 8px 24px rgba(18,24,32,.04)}
+    .hero-features b{display:block;color:var(--gold);font-size:18px}.hero-visual{overflow:hidden;border-radius:30px;border:1px solid #e8e8e8;box-shadow:var(--shadow2);position:relative}.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.08),transparent 40%)}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:30px;background:#eee;border:1px solid #eee;border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}
+    .stat{background:#fff;padding:23px;text-align:center}.stat strong{display:block;font-size:29px;color:var(--gold)}.stat span{color:var(--muted);font-size:13px}
+    .section{padding:78px 0}.section.soft{background:var(--soft)}.section-head{text-align:center;max-width:760px;margin:0 auto 38px}.section-head h2{font-size:clamp(30px,4vw,46px);line-height:1.25;margin:8px 0}.section-head p{margin:0;color:var(--muted)}
+    .portfolio{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.work{background:#fff;border:1px solid #eaeaea;border-radius:22px;overflow:hidden;box-shadow:0 12px 35px rgba(18,24,32,.06);transition:.3s}
+    .work:hover{transform:translateY(-7px);box-shadow:var(--shadow)}.work-img{height:220px;overflow:hidden}.work-img img{width:100%;height:100%;object-fit:cover;transition:.45s}.work:hover img{transform:scale(1.06)}
+    .work-body{padding:17px}.work-body b{font-size:17px}.work-body p{font-size:13px;color:var(--muted);margin:5px 0 0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}.about-copy,.about-image{background:#fff;border:1px solid #e8e8e8;border-radius:28px;box-shadow:var(--shadow);overflow:hidden}
+    .about-copy{padding:32px}.about-copy h3{font-size:30px;margin:0 0 12px}.about-copy p{color:var(--muted)}.about-image img{height:100%;object-fit:cover}
+    .check-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:20px 0}.check-list div{background:#fff8ea;border:1px solid #f2dfb9;border-radius:16px;padding:12px;font-weight:700}
+    .consult{background:linear-gradient(135deg,#161b22,#252b34);color:#fff;border-radius:30px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:24px;box-shadow:var(--shadow2)}.consult h3{font-size:30px;margin:0 0 7px}.consult p{margin:0;color:#d0d4d8}
+    .pricing{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.price{background:#fff;border:1px solid #e8e8e8;border-radius:25px;padding:24px;position:relative;box-shadow:0 12px 35px rgba(18,24,32,.05);transition:.3s}
+    .price:hover{transform:translateY(-6px)}.price.featured{border:2px solid var(--gold);box-shadow:0 18px 45px rgba(201,154,62,.16)}.price.featured:before{content:"الأكثر طلبًا";position:absolute;top:15px;left:15px;background:var(--gold);color:#fff;border-radius:999px;padding:5px 10px;font-size:11px;font-weight:800}
+    .price h3{margin:5px 0}.amount{font-size:39px;font-weight:900;color:var(--gold)}.amount small{font-size:14px;color:var(--muted)}.price ul{list-style:none;padding:0}.price li{margin:9px 0;font-size:14px}.price li:before{content:"✓";color:var(--gold);font-weight:900;margin-left:7px}
+    .faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.faq{background:#fff;border:1px solid #e8e8e8;border-radius:20px;padding:20px}.faq h3{margin:0 0 6px}.faq p{margin:0;color:var(--muted)}
+    .contact{background:#111820;color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:24px}.contact-card,.form{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:26px;padding:26px}
+    .info{display:grid;gap:12px}.info div,.info a{display:block;background:rgba(255,255,255,.07);padding:13px;border-radius:15px}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.form input,.form select,.form textarea{width:100%;padding:13px;border-radius:14px;border:1px solid rgba(255,255,255,.16);background:rgba(0,0,0,.22);color:#fff}.form textarea{grid-column:1/-1;min-height:115px}.form input::placeholder,.form textarea::placeholder{color:#cad0d4}
+    footer{padding:26px;text-align:center;color:#757d84}.float{position:fixed;right:18px;bottom:18px;z-index:90;background:#25d366;color:#fff;padding:12px 17px;border-radius:999px;font-weight:900;box-shadow:0 15px 35px rgba(37,211,102,.32)}.float.consult-btn{right:143px;background:var(--gold)}
+    .reveal{opacity:0;transform:translateY(24px);transition:.7s}.reveal.show{opacity:1;transform:none}
+    @media(max-width:1050px){.nav-links{display:none}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.portfolio{grid-template-columns:repeat(2,1fr)}.pricing{grid-template-columns:repeat(2,1fr)}.hero-features{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:650px){.section{padding:56px 0}.portfolio,.pricing,.faq-grid,.form-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.consult{flex-direction:column;align-items:flex-start}.float{right:10px;bottom:10px}.float.consult-btn{right:10px;bottom:66px}.brand{font-size:19px}.hero-actions .btn{width:100%}.work-img{height:240px}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"منصة سهم للنشر","telephone":"+966531458445","email":"sahmplatform620@gmail.com","description":"حلول رقمية وتسويقية للمشاريع والمتاجر"}
+  </script>
+</head>
+<body>
+<nav class="nav"><div class="container nav-inner">
+  <a class="brand" href="#"><span class="brand-mark">↗</span><span>سهم<small>للنشر والتسويق</small></span></a>
+  <div class="nav-links"><a href="#">الرئيسية</a><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#work">أعمالنا</a><a href="#pricing">الباقات</a><a href="#consult">الاستشارة</a><a href="#faq">الأسئلة الشائعة</a><a href="#contact">تواصل معنا</a></div>
+  <a class="btn gold" target="_blank" href="https://wa.me/966531458445?text=السلام عليكم، أريد استشارة مجانية">استشارة مجانية</a>
+</div></nav>
+
+<header class="hero"><div class="container">
+  <div class="hero-grid">
+    <div class="reveal">
+      <span class="badge">حلول تسويق رقمي متكاملة</span>
+      <h1>نحوّل فكرتك إلى <span>علامة تجارية مؤثرة</span></h1>
+      <p>نساعدك على التميز والوصول للجمهور المناسب وتحقيق نتائج حقيقية، سواء كانت ميزانيتك صغيرة أو كبيرة.</p>
+      <div class="hero-actions"><a class="btn gold" href="#pricing">استكشف خدماتنا</a><a class="btn light" target="_blank" href="https://wa.me/966531458445?text=السلام عليكم، أريد استشارة مجانية">استشارة مجانية</a></div>
+      <div class="hero-features"><div><b>دعم مستمر</b><span>قبل وبعد التنفيذ</span></div><div><b>فريق متخصص</b><span>تصميم وتسويق</span></div><div><b>نتائج قابلة للقياس</b><span>خطط واضحة</span></div><div><b>حلول ذكية</b><span>تناسب الميزانية</span></div></div>
+    </div>
+    <div class="hero-visual reveal"><img src="assets/images/hero.webp" alt="منصة سهم للنشر"></div>
+  </div>
+  <div class="stats reveal"><div class="stat"><strong data-count="98">0</strong><span>نسبة رضا العملاء</span></div><div class="stat"><strong data-count="4">0</strong><span>سنوات خبرة</span></div><div class="stat"><strong data-count="200">0</strong><span>عميل سعيد</span></div><div class="stat"><strong data-count="500">0</strong><span>مشروع مكتمل</span></div></div>
+</div></header>
+
+<section id="work" class="section"><div class="container">
+  <div class="section-head reveal"><span class="badge">أعمالنا</span><h2>معرض أعمال احترافي</h2><p>نماذج بصرية للخدمات التي نقدمها للمشاريع والمتاجر.</p></div>
+  <div class="portfolio">
+    <article class="work reveal"><div class="work-img"><img loading="lazy" src="assets/images/restaurant.webp" alt="هوية مطعم"></div><div class="work-body"><b>هوية مطعم متكاملة</b><p>شعار ومنيو وتغليف ومنشورات.</p></div></article>
+    <article class="work reveal"><div class="work-img"><img loading="lazy" src="assets/images/social.webp" alt="حملة سوشال ميديا"></div><div class="work-body"><b>حملة سوشال ميديا</b><p>سناب وإنستغرام وفيسبوك وتيك توك وX.</p></div></article>
+    <article class="work reveal"><div class="work-img"><img loading="lazy" src="assets/images/google.webp" alt="Google Business"></div><div class="work-body"><b>Google Business</b><p>خرائط وتقييمات وظهور محلي.</p></div></article>
+    <article class="work reveal"><div class="work-img"><img loading="lazy" src="assets/images/website.webp" alt="تصميم موقع"></div><div class="work-body"><b>تصميم موقع إلكتروني</b><p>واجهة حديثة ومتجاوبة وسريعة.</p></div></article>
+    <article class="work reveal"><div class="work-img"><img loading="lazy" src="assets/images/company.webp" alt="هوية شركة"></div><div class="work-body"><b>هوية شركات</b><p>كروت وملفات وأوراق رسمية.</p></div></article>
+    <article class="work reveal"><div class="work-img"><img loading="lazy" src="assets/images/campaign.webp" alt="حملة إعلانية"></div><div class="work-body"><b>حملات إعلانية</b><p>تصميم ومحتوى وفيديو وانتشار.</p></div></article>
+    <article class="work reveal"><div class="work-img"><img loading="lazy" src="assets/images/about.webp" alt="من نحن"></div><div class="work-body"><b>تعريف الشركات</b><p>صياغة وعرض احترافي للهوية والرسالة.</p></div></article>
+    <article class="work reveal"><div class="work-img"><img loading="lazy" src="assets/images/photography.webp" alt="تصوير منتجات"></div><div class="work-body"><b>تصوير منتجات</b><p>صور جذابة للإعلانات والمتاجر.</p></div></article>
+  </div>
+</div></section>
+
+<section id="about" class="section soft"><div class="container">
+  <div class="about-grid">
+    <div class="about-copy reveal"><span class="badge">من نحن</span><h3>شريكك في النجاح الرقمي</h3><p>نحن في منصة سهم للنشر نؤمن بأن كل علامة تجارية تستحق أن ترى النور. لذلك نقدم خدمات تسويقية مرنة تناسب المشاريع الصغيرة والمتوسطة، ونوفر جودة عالية بأسعار مناسبة دون اشتراط ميزانيات كبيرة.</p><div class="check-list"><div>أسعار مناسبة</div><div>خدمة احترافية</div><div>استشارة مجانية</div><div>سرعة في التنفيذ</div></div><a class="btn gold" href="#consult">تعرف علينا أكثر</a></div>
+    <div class="about-image reveal"><img loading="lazy" src="assets/images/about.webp" alt="من نحن"></div>
+  </div>
+</div></section>
+
+<section id="services" class="section"><div class="container">
+  <div class="section-head reveal"><span class="badge">خدماتنا</span><h2>حلول متكاملة في مكان واحد</h2><p>التصميم، التسويق، المحتوى، المواقع، وخرائط Google.</p></div>
+  <div class="portfolio">
+    <article class="work reveal"><div class="work-body"><b>التسويق الرقمي</b><p>خطط وحملات مدروسة لزيادة الانتشار.</p></div></article>
+    <article class="work reveal"><div class="work-body"><b>الهوية البصرية</b><p>شعار وألوان وخطوط وهوية متكاملة.</p></div></article>
+    <article class="work reveal"><div class="work-body"><b>تصميم المنشورات</b><p>بوسترات مناسبة لجميع المنصات.</p></div></article>
+    <article class="work reveal"><div class="work-body"><b>تصميم المواقع</b><p>مواقع تعريفية وصفحات هبوط.</p></div></article>
+  </div>
+</div></section>
+
+<section id="pricing" class="section soft"><div class="container">
+  <div class="section-head reveal"><span class="badge">الباقات</span><h2>باقات واضحة تناسب احتياجك</h2></div>
+  <div class="pricing">
+    <article class="price reveal"><div>🟢</div><h3>الباقة الأولى</h3><div class="amount">500 <small>ريال</small></div><ul><li>إضافة موقعك التجاري على خرائط قوقل.</li><li>ربط وسائل التواصل.</li><li>تصميم 5 بوسترات احترافية.</li><li>سناب شات – تيك توك – فيسبوك.</li></ul><a class="btn light" target="_blank" href="https://wa.me/966531458445?text=أرغب في طلب الباقة الأولى">اطلب الآن</a></article>
+    <article class="price featured reveal"><div>🔵</div><h3>الباقة الثانية</h3><div class="amount">1000 <small>ريال</small></div><ul><li>إضافة موقعك التجاري على خرائط قوقل.</li><li>ربط وسائل التواصل.</li><li>تصميم 10 بوسترات احترافية.</li><li>سناب شات – تيك توك – فيسبوك – حالات واتساب.</li></ul><a class="btn gold" target="_blank" href="https://wa.me/966531458445?text=أرغب في طلب الباقة الثانية">اطلب الآن</a></article>
+    <article class="price reveal"><div>🟣</div><h3>الباقة الثالثة</h3><div class="amount">3000 <small>ريال</small></div><ul><li>إدارة محتوى كاملة + تصميم احترافي.</li><li>زيادة الظهور لمدة 10 أيام.</li><li>فيديو دعائي إلكتروني قصير.</li><li>7 بوسترات دعائية.</li></ul><a class="btn light" target="_blank" href="https://wa.me/966531458445?text=أرغب في طلب الباقة الثالثة">اطلب الآن</a></article>
+    <article class="price reveal"><div>🟡</div><h3>الباقة المميزة</h3><div class="amount">5000 <small>ريال</small></div><ul><li>إدارة محتوى كاملة لمدة شهر.</li><li>تصميم 20 بوستر احترافي.</li><li>تصميم لوقو إلكتروني.</li><li>بناء هوية تسويقية قوية.</li><li>فيديو دعائي إلكتروني قصير.</li></ul><a class="btn light" target="_blank" href="https://wa.me/966531458445?text=أرغب في طلب الباقة المميزة">اطلب الآن</a></article>
+  </div>
+</div></section>
+
+<section id="consult" class="section"><div class="container"><div class="consult reveal"><div><span class="badge">استشارة مجانية</span><h3>لا تعرف من أين تبدأ؟</h3><p>سنساعدك في اختيار أفضل حل يناسب نشاطك وميزانيتك.</p></div><a class="btn gold" target="_blank" href="https://wa.me/966531458445?text=السلام عليكم، أريد استشارة مجانية">احجز استشارتك الآن</a></div></div></section>
+
+<section id="faq" class="section soft"><div class="container">
+  <div class="section-head reveal"><span class="badge">الأسئلة الشائعة</span><h2>كل ما تحتاج معرفته قبل البدء</h2></div>
+  <div class="faq-grid"><div class="faq reveal"><h3>هل يمكن البدء بميزانية صغيرة؟</h3><p>نعم، الباقات تبدأ من 500 ريال.</p></div><div class="faq reveal"><h3>هل تشمل الباقات تعديلات؟</h3><p>نعم، حسب الاتفاق ونوع الباقة.</p></div><div class="faq reveal"><h3>كم يستغرق التنفيذ؟</h3><p>تحدد المدة قبل البدء وفق الخدمة.</p></div><div class="faq reveal"><h3>هل الاستشارة مجانية؟</h3><p>نعم، قبل اختيار الخدمة والدفع.</p></div></div>
+</div></section>
+
+<section id="contact" class="section contact"><div class="container contact-grid">
+  <div class="contact-card reveal"><span class="badge">تواصل معنا</span><h2>ابدأ الآن وخلي مشروعك ينتشر بقوة!</h2><div class="info"><a target="_blank" href="https://wa.me/966531458445">واتساب: +966 53 145 8445</a><div>البريد: sahmplatform620@gmail.com</div><div>استشارة مجانية قبل اختيار الباقة</div></div></div>
+  <form class="form reveal" onsubmit="sendWhatsApp(event)"><div class="form-grid"><input id="name" placeholder="الاسم الكامل" required><input id="phone" placeholder="رقم الجوال"><select id="service"><option>نوع الخدمة</option><option>تسويق رقمي</option><option>هوية بصرية</option><option>تصميم موقع</option><option>خرائط Google</option></select><select id="budget"><option>الميزانية</option><option>500 ريال</option><option>1000 ريال</option><option>3000 ريال</option><option>5000 ريال</option></select><textarea id="desc" placeholder="اكتب وصفًا مختصرًا عن مشروعك"></textarea></div><button class="btn gold" type="submit" style="margin-top:13px">إرسال عبر واتساب</button></form>
+</div></section>
+<footer>جميع الحقوق محفوظة © منصة سهم للنشر</footer>
+<a class="float" target="_blank" href="https://wa.me/966531458445">واتساب</a><a class="float consult-btn" target="_blank" href="https://wa.me/966531458445?text=السلام عليكم، أريد استشارة مجانية">استشارة</a>
+<script>
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const counters=document.querySelectorAll('[data-count]');let started=false;
+const counterObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting&&!started){started=true;counters.forEach(el=>{const target=+el.dataset.count;let n=0;const step=Math.max(1,Math.ceil(target/45));const t=setInterval(()=>{n+=step;if(n>=target){n=target;clearInterval(t)}el.textContent=(target===98?'+':'')+n+(target===98?'%':'+')},28)})}})},{threshold:.4});
+if(counters.length)counterObserver.observe(counters[0]);
+function sendWhatsApp(e){e.preventDefault();const n=document.getElementById('name').value||'',s=document.getElementById('service').value||'',b=document.getElementById('budget').value||'',d=document.getElementById('desc').value||'';const msg=`السلام عليكم منصة سهم للنشر%0Aالاسم: ${encodeURIComponent(n)}%0Aالخدمة: ${encodeURIComponent(s)}%0Aالميزانية: ${encodeURIComponent(b)}%0Aالوصف: ${encodeURIComponent(d)}`;window.open('https://wa.me/966531458445?text='+msg,'_blank')}
+</script>
+</body>
+</html>
